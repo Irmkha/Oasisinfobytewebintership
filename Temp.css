@@ -1,0 +1,35 @@
+/* Background Gradient */
+body {
+    background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+  }
+  
+  /* Card Styling */
+  .card {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Form Elements */
+  input, select, button {
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  input:focus, select:focus {
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Button Hover */
+  button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 5px 10px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Result Display */
+  #result {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+  

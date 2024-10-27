@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Landing Page</title>
+    <link rel="stylesheet" href="landingpage.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Landing Page</h1>
+        <h2 id="personalized-message">Get started with us today!</h2>
+    </header>
+
+    <section id="cta-section">
+        <h3>Our Latest Offer</h3>
+        <p id="dynamic-offer">Special offer: 50% off for new users!</p>
+        <button id="cta-button" onclick="changeOffer()">Claim Offer</button>
+    </section>
+
+    <section id="form-section">
+        <h3>Subscribe for Updates</h3>
+        <form id="subscribe-form" onsubmit="return personalizePage()">
+            <input type="text" id="username" placeholder="Enter your name" required>
+            <input type="email" id="user-email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Dynamic Landing Page</p>
+    </footer>
+
+    <script src="landingpage.js"></script>
+</body>
+</html>

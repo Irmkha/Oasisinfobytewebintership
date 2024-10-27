@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button id="toggle-theme">Toggle Dark Mode</button>
+        </nav>
+        <div class="hero-content">
+            <h1 class="fade-in">Hi, I'm Iram </h1>
+            <p class="typewriter-effect">Creative Developer | Designer | Innovator</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="lazy-load">
+        <h2>About Me</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum.</p>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="lazy-load">
+        <h2>Portfolio</h2>
+        <div class="filter">
+            <button class="filter-btn" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web-dev">Web Development</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+        <div class="portfolio-grid">
+            <div class="project-card web-dev">
+                <h3>Web Project 1</h3>
+                <img src="project1.jpg" alt="Project 1">
+                <p>Web Development project description.</p>
+            </div>
+            <div class="project-card design">
+                <h3>Design Project 1</h3>
+                <img src="design1.jpg" alt="Design 1">
+                <p>Design project description.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="lazy-load">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>© 2024 [Your Name] Portfolio</p>
+    </footer>
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
